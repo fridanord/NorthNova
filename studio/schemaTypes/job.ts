@@ -9,7 +9,7 @@ export default defineType({
             name: "title",
             title: "Tjänst",
             type: "string",
-            validation: (rule) => rule.required(),
+            validation: (rule) => rule.required().max(50).warning("Max 50 tecken"),
         }),
         defineField({
             name: "location",

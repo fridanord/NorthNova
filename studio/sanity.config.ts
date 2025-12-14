@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'NorthNova',
+  title: 'NorthNova Admin',
 
   projectId: '310fjljl',
   dataset: 'production',

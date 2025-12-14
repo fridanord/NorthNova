@@ -40,6 +40,7 @@ export default defineType({
       name: 'description',
       title: 'Beskrivning',
       type: 'text',
+      validation: (rule) => rule.required().min(10).error("Minst 10 tecken!")
     }),
   ],
 })
