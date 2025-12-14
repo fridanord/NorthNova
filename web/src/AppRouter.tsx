@@ -1,0 +1,19 @@
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import Projects from "./pages/Projects"
+import Articles from "./pages/Articles"
+import JobOffers from "./pages/JobOffers"
+import Contact from "./pages/Contact"
+
+export default function App() {
+    return (
+        <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/articles' element={<Articles />} />
+        <Route path='/jobs' element={<JobOffers />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+      
+    )
+}
