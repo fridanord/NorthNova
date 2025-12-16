@@ -25,7 +25,7 @@ export default function Header() {
                 <Link to="/projects">Projekt</Link>
                 <Link to="/articles">Nyheter</Link>
                 <Link to="/jobs">Jobb</Link>
-                <Link to="/contact">Något mer?</Link>
+                <Link to="/contact">Våra kontor</Link>
             </nav>
 
             <div className="header-right desktop-only">

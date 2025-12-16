@@ -1,0 +1,137 @@
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 4rem 2rem 2rem;
+    font-family: var(--font-body);
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+
+        .info {
+            .footer-logo {
+                font-family: var(--font-body);
+                font-size: 2rem;
+                margin-bottom: 1.5rem;
+                color: #ECECEC;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                opacity: 0.8;
+                margin-bottom: 1rem;
+                max-width: 300px;
+            }
+        }
+
+        .links {
+            h3 {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+                color: var(--accent-color);
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 0.8rem;
+
+                    a {
+                        color: var(--text-light);
+                        text-decoration: none;
+                        font-size: 0.95rem;
+                        opacity: 0.8;
+                        transition: opacity 0.2s, color 0.2s;
+
+                        &:hover {
+                            opacity: 1;
+                            color: var(--accent-color);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .legal-links {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+
+            a {
+                color: var(--text-light);
+                text-decoration: none;
+                &:hover { text-decoration: underline; }
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1.5rem;
+
+            a {
+                color: var(--text-light);
+                font-size: 1.5rem;
+                transition: transform 0.2s, color 0.2s; 
+
+                &:hover {
+                    color: var(--accent-color);
+                    transform: translateY(-3px); // Gula boxar bakom?
+                }
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+            text-align: left;
+            
+            
+
+            
+        }
+
+        .footer-bottom {
+            flex-direction: column--reverse; //ikoner överest eller underst?
+            gap: 1.5rem;
+
+            
+
+            .legal-links {
+                flex-direction: column;
+                gap: 0.5rem;
+
+                .span {
+                display: none;
+            }
+            }
+        }
+    }
+}
