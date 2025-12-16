@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 :root {
     --primary-color: #008000;
     --text-color: #1a1a1a;
@@ -5,6 +7,9 @@
     --accent-bg: #f4f4f4;
 
     --font-main: 'Inter', system-ui, sans-serif; 
+
+    --font-heading: 'Playfair Display', serif;
+    --accent-color: #F2A900;
 }
 
 * {

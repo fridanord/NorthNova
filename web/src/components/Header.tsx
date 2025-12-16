@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Navbar from "./NavBar"
+import Navbar from "./Navbar.tsx"
 
 export default function Header() {
     return (
@@ -8,6 +8,7 @@ export default function Header() {
             <Link to="/">NorthNova</Link>
 
             <Navbar />
+            
         </header>
     )
 }

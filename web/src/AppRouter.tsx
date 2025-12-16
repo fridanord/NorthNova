@@ -4,11 +4,13 @@ import Projects from "./pages/Projects"
 import Articles from "./pages/Articles"
 import JobOffers from "./pages/JobOffers"
 import Contact from "./pages/Contact"
+import AboutUs from "./pages/AboutUs"
 
 export default function App() {
     return (
         <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path='/about' element={<AboutUs />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/articles' element={<Articles />} />
         <Route path='/jobs' element={<JobOffers />} />

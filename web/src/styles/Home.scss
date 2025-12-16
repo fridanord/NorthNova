@@ -1,0 +1,86 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    justify-content: flex-start;
+    padding-left: 10%;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        
+    }
+}
+
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.639);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    color: white;
+    max-width: 900px;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+
+    }
+
+}
+
+.cta-button {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--accent-color);
+    color: white; // Kolla tillgänglighetskrav för färger sen
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+
+    &:hover {
+        transform: scale(1.05); //Behövs den göras större?
+        filter: brightness(110%); // Gör knappen lite ljusare, ändra till mörkare?
+    }
+
+}
