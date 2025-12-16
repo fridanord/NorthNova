@@ -119,18 +119,17 @@
         }
 
         .footer-bottom {
-            flex-direction: column--reverse; //ikoner överest eller underst?
+            
+            flex-direction: column-reverse; //ikoner överest eller underst?
             gap: 1.5rem;
 
             
 
             .legal-links {
-                flex-direction: column;
+                display: flex;
                 gap: 0.5rem;
 
-                .span {
-                display: none;
-            }
+                
             }
         }
     }
