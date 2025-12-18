@@ -1,7 +1,19 @@
 import videoBg from "../assets/wind-turbines.mp4"
 import '../styles/Home.scss'
+import { useEffect } from "react"
+//import { SanityClient } from "@sanity/client"
+import { client } from '../sanity'
+
+
 
 export default function Home() {
+
+useEffect(() => {
+    client.fetch(`*`).then((data) => {
+        console.log("Sanity funkar, här är datan:", data)
+    }).catch(console.error)
+}, [])
+
     return (
       <div className="home-container">
         <div className="hero">
