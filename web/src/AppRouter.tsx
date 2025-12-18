@@ -5,6 +5,7 @@ import Articles from "./pages/Articles"
 import JobOffers from "./pages/JobOffers"
 import Contact from "./pages/Contact"
 import AboutUs from "./pages/AboutUs"
+import ProjectDetails from "./pages/ProjectDetails"
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path="/projects/:slug" element={<ProjectDetails />} />
         <Route path='/articles' element={<Articles />} />
         <Route path='/jobs' element={<JobOffers />} />
         <Route path='/contact' element={<Contact />} />

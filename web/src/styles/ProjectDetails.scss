@@ -1,0 +1,99 @@
+.project-details-page {
+    min-height: 100vh;
+    background-color: #fff;
+    padding-bottom: 4rem;
+
+    .loading-container{
+        text-align: center;
+        padding-top: 5rem;
+        font-size: 1.2rem;
+        color: #666;
+    }
+
+    .content-container {
+        max-width: 800px;
+        margin: 4rem auto 0;
+        padding: 0 2rem;
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            color: #666;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s;
+
+            &:hover {
+                color: var(--primary-color);
+                transform: translateX(-5px);
+            }
+        }
+
+        .project-header {
+            margin-bottom: 2rem;
+
+            .project-type {
+                display: inline-block;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.85rem;
+                color: var(--accent-color);
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+                text-shadow: none;
+            }
+
+            h1 {
+                font-family: var(--font-heading);
+                font-size: 3rem;
+                //font-weight: 600;
+                line-height: 1.1;
+                color: var(--text-dark);
+                margin: 0;
+                text-shadow: none;
+            }
+        }
+
+        .image-wrapper {
+            margin-bottom: 3rem;
+
+            .project-main-image {
+                width: 100%;
+                height: auto;
+                border-radius: 3px;
+                display: block;
+            }
+        }
+
+        .body-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #2c3e50;
+            white-space: pre-line;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content-container {
+            margin-top: 2rem;
+
+            .project-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .image-wrapper {
+                margin-bottom: 2rem;
+            }
+
+            .body-text {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+}
