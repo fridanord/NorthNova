@@ -1,9 +1,10 @@
-.project-details-page {
+.article-details-page {
     min-height: 100vh;
     background-color: #fff;
     padding-bottom: 4rem;
+    
 
-    .loading-container{
+    .loading-container {
         text-align: center;
         padding-top: 5rem;
         font-size: 1.2rem;
@@ -34,24 +35,23 @@
             }
         }
 
-        .project-header {
+        article-header {
             margin-bottom: 2rem;
+            
 
-            .project-type {
+            .article-date {
                 display: inline-block;
                 text-transform: uppercase;
-                letter-spacing: 2px;
-                font-size: 0.85rem;
-                color: var(--accent-color);
-                font-weight: 700;
-                margin-bottom: 0.5rem;
-                text-shadow: none;
+                letter-spacing: 1px;
+                font-size: 0.9rem;
+                color: #888;
+                font-weight: 600;
+                margin-bottom: 0.8rem;
             }
 
             h1 {
                 font-family: var(--font-heading);
                 font-size: 3rem;
-                //font-weight: 600;
                 line-height: 1.1;
                 color: var(--text-dark);
                 margin: 0;
@@ -62,10 +62,10 @@
         .image-wrapper {
             margin-bottom: 3rem;
 
-            .project-main-image {
+            .article-main-image {
                 width: 100%;
                 height: auto;
-                border-radius: 3px;
+                border-radius: 5px;
                 display: block;
             }
         }
@@ -76,43 +76,34 @@
             color: #2c3e50;
             white-space: pre-line;
         }
-    }
 
-    .project-footer {
-        margin-top: 4rem;
-        padding-bottom: 2rem;
+        .article-footer {
+            margin-top: 5rem;
+            padding-bottom: 2rem;
 
-        .divider {
-            height: 1px;
-            background-color: #eee;
-            margin-bottom: 1.5rem;
-            width: 100%;
-        }
+            .divider {
+                height: 1px;
+                background-color: #eee;
+                margin-bottom: 1rem;
+                width: 100%;
+            }
 
-        .meta-info {
-            display: flex;
-            align-items: center;
-            color: #888;
-            
+            .meta-info {
+                color: #999;
+                font-size: 0.85rem;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
         }
     }
 
     @media (max-width: 768px) {
         .content-container {
             margin-top: 2rem;
-
-            .project-header h1 {
-                font-size: 2.2rem;
-            }
-
-            .image-wrapper {
-                margin-bottom: 2rem;
-            }
-
-            .body-text {
-                font-size: 1.1rem;
-            }
+            .article-header h1 { font-size: 2.2rem; }
+            .body-text { font-size: 1.1rem; }
         }
     }
-
 }

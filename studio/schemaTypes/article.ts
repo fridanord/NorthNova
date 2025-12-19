@@ -11,6 +11,19 @@ export default defineType({
             type: "string",
             validation: (rule) => rule.required(),
         }),
+
+        defineField({
+            name: "slug",
+            title: "Slug (Adress)",
+            type: "slug",
+            options: {
+                source: "title",
+                maxLength: 96,
+            },
+            validation: (rule) => rule.required(),
+        }),
+
+
         defineField({
             name: "publishedAt",
             title: "Publicerad datum",

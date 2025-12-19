@@ -41,6 +41,13 @@ export default function ProjectDetails() {
                 <div className="body-text">
                     <p>{project.description}</p>
                 </div>
+
+                <footer className="project-footer">
+                    <div className="divider"></div>
+                    <div className="meta-info">
+                        <span>Publicerad: {new Date(project.date).toLocaleDateString('sv-SE')}</span>
+                    </div>
+                </footer>
             </article>
         </div>
     )
