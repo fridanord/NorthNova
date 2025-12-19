@@ -37,3 +37,24 @@ export const getSingleArticle = `*[slug.current == $slug] [0]{
    "imageUrl": image.asset->url,
    "description": content
 }`;
+
+export const getAllJobs = `*[_type == "job"] | order(deadline asc) {
+  _id,
+  title,
+  "slug": slug.current,
+  location,
+  deadline,
+  "imageUrl": image.asset->url,
+  description
+}`;
+
+export const getSingleJob = `*[slug.current == $slug][0]{
+   _id,
+   title,
+   "slug": slug.current,
+   location,
+   description,
+   email,
+   deadline,
+   "imageUrl": image.asset->url
+}`;
