@@ -1,0 +1,141 @@
+$bg-color: #fff;
+$text-dark: #1a1a1a;
+$text-light: #666;
+$accent-color: #d35400;
+$light-gray: #f8f9fa;
+
+.job-details-page {
+    min-height: 100vh;
+    background-color: $bg-color;
+    padding-bottom: 4rem;
+
+    .loading-container {
+        text-align: center;
+        padding-top: 5rem;
+        color: $text-light;
+    }
+
+    .content-container {
+        max-width: 800px;
+        margin: 4rem auto 0;
+        padding: 0 2rem;
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: $text-light;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+
+        .article-header {
+            margin-bottom: 2rem;
+
+            .meta-tags {
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 1.5rem;
+                flex-wrap: wrap;
+
+                .pill {
+                    padding: 0.5rem 1rem;
+                    border-radius: 50px;
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+
+                    &.location {
+                        background-color: #f0ebe5;
+                        color: $text-dark;
+                    }
+
+                    &.deadline {
+                        background-color: #ffebee;
+                        color: #c62828;
+                    }
+                }
+            }
+
+            h1 {
+                font-family: var(--font-heading);
+                font-size: 3rem;
+                line-height: 1.1;
+                color: $text-dark;
+                margin: 0;
+                text-shadow: none;
+            }
+        }
+
+        .image-wrapper {
+            margin-bottom: 3rem;
+
+            .article-main-image {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                display: block;
+            }
+        }
+
+        .body-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #2c3e50;
+            white-space: pre-line;
+            margin-bottom: 4rem;
+        }
+
+        
+
+        .article-footer {
+            margin-top: 5rem;
+
+            .divider {
+                height: 1px;
+                background-color: #eee;
+                margin-bottom: 1rem;
+            }
+
+            .meta-info {
+                color: #ccc;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .simple-apply-btn {
+        display: inline-flex;
+        background-color: #FFC107;
+        color: #1a1a1a;
+        padding: 0.8rem 2rem;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #d35400;
+            transform: translateY(-3px);
+
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content-container {
+            padding: 0 1.5rem;
+            .article-header h1 { font-size: 2.2rem; }
+        }
+    }
+}
