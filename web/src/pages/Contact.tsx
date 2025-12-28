@@ -67,6 +67,7 @@ export default function Contact() {
                             <input
                               type="text"
                               id= "name"
+                              name="name"
                               required
                               placeholder="Ditt för- och efternamn"
                               value={formData.name}

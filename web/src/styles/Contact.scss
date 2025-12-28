@@ -1,0 +1,119 @@
+$text-dark: #1a1a1a;
+$text-light: #666;
+$accent-yellow: #FFC107;
+$bg-color: #f9f9f9;
+
+.contact-page {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .contact-container {
+        width: 100%;
+        max-width: 600px;
+        background: #fff;
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            text-shadow: none;
+            margin-bottom: 1rem;
+            color: $text-dark;
+            text-align: center;
+
+        }
+
+        p.intro {
+            text-align: center;
+            color: $text-light;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            label {
+                font-weight: 600;
+                font-size: 0.9rem;
+                color: $text-dark;
+                margin-bottom: 0.3rem;
+                display: block;
+            }
+
+            input, select, textarea {
+                width: 100%;
+                padding: 1rem;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                font-size: 1rem;
+                font-family: inherit;
+                transition: border-color 0.3s;
+                background-color: $bg-color;
+
+                &:focus {
+                    outline: none;
+                    border-color: $text-dark;
+                    background-color: #fff;
+                }
+            }
+
+            text-area {
+                min-height: 150px;
+                resize: vertical;
+            }
+
+            .file-upload-section {
+                background-color: #f0f4f8;
+                border: 2px dashed #ccc;
+                padding: 1.5rem;
+                border-radius: 8px;
+                text-align: center;
+
+                p {
+                    margin: 0 0 0.5rem 0;
+                    font-size: 0.9rem;
+                    color: $text-dark;
+                    font-weight: 600;
+                }
+
+                input[type="file"] {
+                    background: transparent;
+                    border: none;
+                    padding: 0;
+                    font-size: 0.9rem;
+                }
+            }
+
+            button[type="submit"] {
+                background-color: $accent-yellow;
+                color: $text-dark;
+                border: none;
+                padding: 1rem;
+                border-radius: 50px;
+                font-size: 1.1rem;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                margin-top: 1rem;
+                
+                &:hover {
+                    transform: translateY(-2px);
+                    background-color: darken($accent-yellow, 5%);
+                    color: #f9f9f9;
+                }
+
+                &:disabled {
+                    background-color: #eee;
+                    cursor: not-allowed;
+                    transform: none;
+                }
+            }
+        }
+    }
+}
