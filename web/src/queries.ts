@@ -5,6 +5,7 @@ export const getAllProjects = `*[_type == "project"]{
   description,
   "slug": slug.current,
   type,
+  status,
   "imageUrl": image.asset->url
 }`;
 

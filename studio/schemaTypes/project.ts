@@ -31,6 +31,21 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'status',
+      title: 'Status',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Pågående', value: 'ongoing'},
+          { title: 'Kommande', value: 'upcoming'},
+          { title: 'Avslutade', value: 'completed'}
+        ],
+        layout: 'radio',
+      },
+      initialValue: 'ongoing',
+    }),
+    
+    defineField({
       name: 'image',
       title: 'Omslagsbild',
       type: 'image',
