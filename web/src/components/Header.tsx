@@ -26,14 +26,10 @@ export default function Header() {
                 <Link to="/articles">Nyheter</Link>
                 <Link to="/jobs">Jobb</Link>
                 <Link to="/contact">Våra kontor</Link>
+                <Link to= "/contact">Kontakta oss</Link>
             </nav>
 
-            <div className="header-right desktop-only">
-                <Link to="/contact" className="cta-button">
-                   Kontakta oss
-                </Link>
-            </div>
-
+            
             <button className="hamburger-btn" onClick={toggleMenu}>
                 {isMenuOpen ? "✕" : "☰"}
             </button>

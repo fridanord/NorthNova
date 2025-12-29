@@ -14,9 +14,9 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        font-family: 'Inter', sans-serif;
+        font-family: "Roboto mono", monospace;
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: var(--text-light);
         text-decoration: none;
 
@@ -25,13 +25,14 @@
 
     .header-nav {
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
+        align-content: center;
 
         a {
-            color: var(--text-light);
+            color: var(--text-light2);
             text-decoration: none;
             font-family: var(--font-body);
-            font-weight: 500;
+            font-weight: 600;
             font-size: 1rem;
             transition: color 0.2s;
 
@@ -41,21 +42,6 @@
         }
     }
 
-    .header-right .cta-button {
-        background-color: var(--accent-color);
-        color: var(--text-dark);
-        padding: 10px 24px;
-        border-radius: 6px;
-        font-weight: 600;
-        font-size: 1rem;
-        text-decoration: none;
-        transition: transform 0.2s, filter 0.2s;
-
-        &:hover {
-            filter: brightness(100%);
-            transform: translateY(-2px);
-        }
-    }
 
     .hamburger-btn {
         display: none;

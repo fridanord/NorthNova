@@ -23,7 +23,7 @@ useEffect(() => {
             <div className="hero-overlay"></div>
             <div className="hero-content">
                 <h1>Vår vision är ett fossilfritt Norden <br /> - drivet av vinden. </h1>
-                <button className="cta-button">Läs mer här</button>
+                <button className="cta-button">Läs mer här ➝</button>
             </div>
         </div>
       </div>

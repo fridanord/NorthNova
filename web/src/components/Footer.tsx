@@ -10,42 +10,39 @@ export default function Footer() {
                 <div className="footer-section info">
                     <h2 className="footer-logo">NorthNova</h2>
                     <p>
-                        NorthNova hittepå beskrivning, ledande aktör inom förbybar energi.
+                        NorthNova är en ledande aktör inom förbybar energi.
                         Vi erbjuder skalbara vindkraftslösningar och hållbar
                         infrastruktur för en grönare framtid.
                     </p>
                     <p>
-                        NorthNova här kanske det kan stå något mer
+                        Vill du vara med och påverka framtiden? Kontakta oss idag.
                     </p>
                 </div>
 
                 <div className="footer-section links">
-                    <h3>Kontakt</h3>
+                    <h3>Om NorthNova</h3>
                     <ul>
                         <li><Link to="/about">Om oss</Link></li>
                         <li><Link to="/projects">Projekt</Link></li>
                         <li><Link to="/articles">Nyheter</Link></li>
-                        <li><Link to="/jobs">Jobb</Link></li>
                         <li><Link to="/contact">Våra kontor</Link></li>
                     </ul>
                 </div>
 
                 <div className="footer-section links">
-                    <h3>Något annat, Career?</h3>
+                    <h3>Kontakt</h3>
                     <ul>
-                        <li><Link to="/about">Om oss</Link></li>
-                        <li><Link to="/projects">Projekt</Link></li>
-                        <li><Link to="/articles">Nyheter</Link></li>
-                        <li><Link to="/jobs">Jobb</Link></li>
+                        <li><Link to="/contact">Kontakta oss</Link></li>
+                        <li><Link to="/jobs">Lediga tjänster</Link></li>
                         <li><Link to="/contact">Våra kontor</Link></li>
                     </ul>
                 </div>
             </div>
             <div className="footer-bottom">
                 <div className="legal-links">
-                    <Link to="/">Cookieinställningar?</Link>
+                    <Link to="/">Cookieinställningar</Link>
                     <span>|</span>
-                    <Link to="/">Integritetspolicy?</Link>
+                    <Link to="/">Integritetspolicy</Link>
                 </div>
 
                 <div className="social-icons">
