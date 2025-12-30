@@ -1,8 +1,10 @@
 import videoBg from "../assets/wind-turbines.mp4"
 import '../styles/Home.scss'
+import { Link } from "react-router-dom"
 import { useEffect } from "react"
-//import { SanityClient } from "@sanity/client"
 import { client } from '../sanity'
+import FeaturedProjects from '../components/FeaturedProjects'
+import LatestNews from "../components/LatestNews"
 
 
 
@@ -23,10 +25,17 @@ useEffect(() => {
             <div className="hero-overlay"></div>
             <div className="hero-content">
                 <h1>Vår vision är ett fossilfritt Norden <br /> - drivet av vinden. </h1>
-                <button className="cta-button">Läs mer här ➝</button>
+                
+                <Link to="/projects" className="cta-button">
+                   Läs mer här ➝
+                </Link>
             </div>
         </div>
+
+        <FeaturedProjects />
+        <LatestNews />
       </div>
+      
     )
     
 }

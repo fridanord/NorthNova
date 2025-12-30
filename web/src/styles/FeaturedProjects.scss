@@ -1,0 +1,79 @@
+$primary: #1a1a1a;
+$accent: #d35400;
+$northnova-green: #162d25;
+$accent-yellow: #FFC107;
+$text-light: #ffffff;
+
+.featured-projects {
+    background-color: var(--primary-color);
+    padding: 4rem 2rem;
+    
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 1rem;
+
+        h2 {
+            font-size: 3rem;
+            color: var(--text-light2);
+            margin: 0;
+            font-family: var(--font-heading);
+        }
+
+        .see-all-link {
+            color: $accent-yellow;
+            text-decoration: none;
+            font-weight: 600;
+            &:hover { text-decoration: underline; color: lighten($accent-yellow, 10%); }
+        }
+    }
+
+    .grid-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .mini-card {
+        background: #fff;
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.3s;
+        display: block;
+
+        &:hover {
+            transform: translateY(-5px);
+            
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 1.5rem;
+
+            h3 {
+                margin: 0 0 0.5rem 0;
+                font-size: 1.2rem;
+                color: $primary;
+            }
+
+            .meta {
+                font-size: 0.85rem;
+                color: #666;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+}

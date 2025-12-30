@@ -59,3 +59,21 @@ export const getSingleJob = `*[slug.current == $slug][0]{
    deadline,
    "imageUrl": image.asset->url
 }`;
+
+//Latest for homepage. 
+
+export const getLatestProjects = `*[_type == "project"] | order(_createdAt desc) [0..2] {
+   _id,
+   title,
+   "slug": slug.current,
+   status,
+   "imageUrl": image.asset->url
+}`;
+
+export const getLatestArticles = `*[_type == "article"] | order(publishedAt desc)[0...2] {
+   _id,
+   title,
+   "slug": slug.current,
+   publishedAt,
+   "imageUrl": image.asset->url
+}`;
