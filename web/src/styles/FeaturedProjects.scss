@@ -28,6 +28,7 @@ $text-light: #ffffff;
             color: $accent-yellow;
             text-decoration: none;
             font-weight: 600;
+            font-family: var(--font-header);
             &:hover { text-decoration: underline; color: lighten($accent-yellow, 10%); }
         }
     }
@@ -47,6 +48,7 @@ $text-light: #ffffff;
         color: inherit;
         transition: transform 0.3s;
         display: block;
+        font-family: var(--font-header);
 
         &:hover {
             transform: translateY(-5px);

@@ -16,6 +16,16 @@
         margin: 4rem auto 0;
         padding: 0 2rem;
 
+        h1 {
+                font-family: var(--font-heading);
+                font-size: 3rem;
+                line-height: 1.1;
+                color: var(--primary-color);
+                margin: 0;
+                margin-bottom: 3%;
+                text-shadow: none;
+            }
+
         .back-link {
             display: inline-flex;
             align-items: center;
@@ -28,6 +38,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.2s;
+            font-family: var(--font-header);
 
             &:hover {
                 color: var(--primary-color);
@@ -35,7 +46,7 @@
             }
         }
 
-        article-header {
+        .article-header {
             margin-bottom: 2rem;
             
 
@@ -47,16 +58,10 @@
                 color: #888;
                 font-weight: 600;
                 margin-bottom: 0.8rem;
+                font-family: var(--font-header);
             }
 
-            h1 {
-                font-family: var(--font-heading);
-                font-size: 3rem;
-                line-height: 1.1;
-                color: var(--text-dark);
-                margin: 0;
-                text-shadow: none;
-            }
+            
         }
 
         .image-wrapper {
@@ -75,11 +80,13 @@
             line-height: 1.8;
             color: #2c3e50;
             white-space: pre-line;
+            font-family: var(--font-header);
         }
 
         .article-footer {
             margin-top: 5rem;
             padding-bottom: 2rem;
+            font-family: var(--font-header);
 
             .divider {
                 height: 1px;

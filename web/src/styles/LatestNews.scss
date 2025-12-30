@@ -2,7 +2,7 @@ $primary: #1a1a1a;
 $accent: #d35400;
 
 .latest-news {
-    background-color: #ffffff;
+    background-color: var(--text-light2);
     padding: 4rem 2rem;
 
     .container {
@@ -28,7 +28,8 @@ $accent: #d35400;
         .see-all-link {
             color: $accent;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            font-family: var(--font-header);
             &:hover { text-decoration: underline; }
         }
     }
@@ -44,6 +45,7 @@ $accent: #d35400;
             border-radius: 5px;
             overflow: hidden;
             text-decoration: none;
+            font-family: var(--font-header);
             color: inherit;
             transition: transform 0.3s;
             display: block;

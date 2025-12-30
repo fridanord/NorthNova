@@ -17,7 +17,7 @@
         font-family: "Roboto mono", monospace;
         font-weight: 500;
         font-size: 1.1rem;
-        color: var(--text-light);
+        color: var(--text-light2);
         text-decoration: none;
 
 
@@ -29,15 +29,16 @@
         align-content: center;
 
         a {
-            color: var(--text-light2);
+            color: var(--text-light3);
             text-decoration: none;
-            font-family: var(--font-body);
+            font-family: var(--font-header);
             font-weight: 600;
             font-size: 1rem;
             transition: color 0.2s;
 
             &:hover {
                 color: var(--accent-color);
+                
             }
         }
     }

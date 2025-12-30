@@ -1,3 +1,9 @@
+import "../styles/About.scss"
+
 export default function AboutUs() {
-    return <h1>Om oss</h1>
+    return (
+        <div className="about-page">
+            
+        </div>
+    )
 }

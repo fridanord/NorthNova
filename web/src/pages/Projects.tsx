@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { client } from "../sanity"
 import { getAllProjects } from "../queries"
 import "../styles/Projects.scss"
+import "../styles/FilterButtons.scss"
 
 
 export default function Projects() {

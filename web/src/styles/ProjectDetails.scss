@@ -27,6 +27,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.2s;
+            font-family: var(--font-header);
 
             &:hover {
                 color: var(--primary-color);
@@ -46,6 +47,7 @@
                 font-weight: 700;
                 margin-bottom: 0.5rem;
                 text-shadow: none;
+                font-family: var(--font-header);
             }
 
             h1 {
@@ -75,12 +77,14 @@
             line-height: 1.8;
             color: #2c3e50;
             white-space: pre-line;
+            font-family: var(--font-header);
         }
     }
 
     .project-footer {
         margin-top: 4rem;
         padding-bottom: 2rem;
+        font-family: var(--font-header);
 
         .divider {
             height: 1px;

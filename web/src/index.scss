@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Playfair+Display:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
     --primary-color: #1F3B32;
@@ -11,11 +12,13 @@
     --font-main: 'Inter', system-ui, sans-serif; 
 
     --font-heading: 'Playfair Display', serif;
+    --font-header: 'DM sans', sans-serif;
     --accent-color: #F2A900;
 
     --text-light: #ffffff;
     --text-dark: #1F3B32; //Ändra här för tillgänglighetskrav sen
-    --text-light2: #ffe6cf;
+    --text-light2: #fff1e1;
+    --text-light3: #ffe2c1;
 }
 
 * {
