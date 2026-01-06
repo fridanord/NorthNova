@@ -23,9 +23,9 @@ export default defineType({
       type: 'string',
       options: {
         list: [
-          { title: 'Vindkraft', value: 'wind' },
-          { title: 'Solenergi', value: 'solar' },
-          { title: 'Vattenkraft', value: 'hydro' }
+          { title: 'Vindkraft', value: 'Vindkraft' },
+          { title: 'Solenergi', value: 'Solenergi' },
+          { title: 'Vattenkraft', value: 'Vattenkraft' }
         ],
         layout: 'radio'
       },

@@ -1,4 +1,4 @@
-$bg-color: #fff;
+
 $text-dark: #1a1a1a;
 $text-light: #666;
 $accent-color: #d35400;
@@ -6,7 +6,7 @@ $light-gray: #f8f9fa;
 
 .job-details-page {
     min-height: 100vh;
-    background-color: $bg-color;
+    background-color: var(--bg-color);
     padding-bottom: 4rem;
 
     .loading-container {
@@ -42,6 +42,7 @@ $light-gray: #f8f9fa;
 
             .meta-tags {
                 display: flex;
+                //justify-content: space-between;
                 gap: 1rem;
                 margin-bottom: 1.5rem;
                 flex-wrap: wrap;
@@ -54,7 +55,7 @@ $light-gray: #f8f9fa;
                     letter-spacing: 0.5px;
 
                     &.location {
-                        background-color: #f0ebe5;
+                        background-color: #f8d893;
                         color: $text-dark;
                     }
 

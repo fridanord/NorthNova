@@ -20,7 +20,7 @@ export default function ArticleDetails () {
         <div className="article-details-page">
             <article className="content-container">
 
-                <Link to="/articles" className="back-link">Tillbaka till nyheter</Link>
+                <Link to="/articles" className="back-link">← Tillbaka till nyheter</Link>
 
                 <header className="article-header">
                     <span className="article-date">

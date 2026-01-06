@@ -2,6 +2,7 @@
     background-color: var(--primary-color);
     padding: 2rem 2rem;
     width: 100%;
+    
 
     display: flex;
     align-items: center;
@@ -14,9 +15,9 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        font-family: "Roboto mono", monospace;
-        font-weight: 500;
-        font-size: 1.1rem;
+        font-family: "DM sans", sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
         color: var(--text-light2);
         text-decoration: none;
 

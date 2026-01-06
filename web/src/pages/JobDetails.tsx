@@ -19,12 +19,12 @@ export default function JobDetails() {
     return (
     <div className="job-details-page">
         <article className="content-container">
-            <Link to="/jobs" className="back-link">Tillbaka till alla tjänster</Link>
+            <Link to="/jobs" className="back-link">← Tillbaka till alla tjänster</Link>
 
             <header className="article-header">
                 <div className="meta-tags">
                     {job.location && (
-                        <span className="pill-location">{job.location}</span>
+                        <span className="pill location">{job.location}</span>
                     )}
                     {job.deadline && (
                         <span className="pill deadline"> Ansök senast: {job.deadline}</span>

@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="footer-content">
 
                 <div className="footer-section info">
-                    <h2 className="footer-logo">NorthNova</h2>
+                    <h2 className="footer-logo">NorthNova.</h2>
                     <p>
                         NorthNova är en ledande aktör inom förbybar energi.
                         Vi erbjuder skalbara vindkraftslösningar och hållbar

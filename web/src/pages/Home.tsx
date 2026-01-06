@@ -5,6 +5,8 @@ import { useEffect } from "react"
 import { client } from '../sanity'
 import FeaturedProjects from '../components/FeaturedProjects'
 import LatestNews from "../components/LatestNews"
+import AboutUs from "./AboutUs"
+
 
 
 
@@ -20,7 +22,7 @@ useEffect(() => {
       <div className="home-container">
         <div className="hero">
             <video className="video-bg" autoPlay loop muted playsInline>
-                <source src={videoBg} type="video/mp4" />
+                <source src={videoBg} type="video/mp4"  />
             </video>
             <div className="hero-overlay"></div>
             <div className="hero-content">
@@ -34,6 +36,7 @@ useEffect(() => {
 
         <FeaturedProjects />
         <LatestNews />
+        <AboutUs />
       </div>
       
     )

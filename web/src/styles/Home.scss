@@ -1,4 +1,4 @@
-.hero {
+.hero { //Flytta rätt, annars ligger allt löst. But it works?
     position: relative;
     width: 100%;
     height: 90vh;
@@ -32,7 +32,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.721);
+    background: rgba(0, 0, 0, 0.502);
     z-index: 1;
 }
 
@@ -53,9 +53,10 @@
 
 h1 {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 1.2;
+    //max-width: 600px; //Här
     margin-bottom: 2rem;
     color: var(--text-light2);
     //text-shadow: 0 2px 4px rgba(0,0,0,0.3);
@@ -70,10 +71,10 @@ h1 {
 .cta-button {
     font-family: var(--font-header);
     background-color: var(--accent-color);
-    color: white; // Kolla tillgänglighetskrav för färger sen
-    padding: 15px 40px;
-    font-size: 1rem;
-    font-weight: 600px;
+    color: #1a1a1a; // Kolla tillgänglighetskrav för färger sen
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
     border: none;
     border-radius: 4px;
     cursor: pointer;

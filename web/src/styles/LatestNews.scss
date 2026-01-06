@@ -2,7 +2,7 @@ $primary: #1a1a1a;
 $accent: #d35400;
 
 .latest-news {
-    background-color: var(--text-light2);
+    background-color: var(--bg-color);
     padding: 4rem 2rem;
 
     .container {
@@ -22,7 +22,7 @@ $accent: #d35400;
             font-size: 3rem;
             color: var(--primary-color);
             margin: 0;
-            font-family: var(--font-heading);
+            font-family: var(--font-header);
         }
 
         .see-all-link {

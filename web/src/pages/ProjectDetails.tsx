@@ -21,7 +21,7 @@ export default function ProjectDetails() {
     return (
         <div className="project-details-page">
             <article className="content-container">
-                <Link to="/projects" className="back-link">Tillbaka till all projekt</Link>
+                <Link to="/projects" className="back-link">← Tillbaka till alla projekt</Link>
 
                 <header className="project-header">
                     {project.type && <span className="project-type">{project.type}</span>}

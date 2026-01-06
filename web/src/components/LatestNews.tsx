@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { client } from "../sanity"
 import { getLatestArticles } from "../queries"
 import "../styles/LatestNews.scss"
+import { urlFor } from "../sanity"
 
 export default function LatestNews() {
     const [articles, setArticles] = useState([])
@@ -26,7 +27,8 @@ export default function LatestNews() {
                 <div className="grid-row">
                     {articles.map((article: any) => (
                         <Link to={`/articles/${article.slug}`} key={article._id} className="mini-card">
-                            {article.imageUrl && <img src={article.imageUrl} alt={article.title} /> }
+                            {/*{article.imageUrl && <img src={article.imageUrl} alt={article.title} loading="lazy" /> }*/}
+                            <img src={urlFor(article.imageUrl).width(600).height(400).url()} alt={article.title} loading="lazy" />
                             <div className="content">
                                 <span className="meta">
                                     {new Date(article.publishedAt).toLocaleDateString()}
