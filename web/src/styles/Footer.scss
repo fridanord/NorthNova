@@ -18,7 +18,6 @@
                 font-size: 2rem;
                 margin-bottom: 1.5rem;
                 color: #ECECEC;
-                //letter-spacing: 1px;
                 font-weight: 700;
             }
 
@@ -100,7 +99,7 @@
 
                 &:hover {
                     color: var(--accent-color);
-                    transform: translateY(-3px); // Gula boxar bakom?
+                    transform: translateY(-3px); 
                 }
             }
         }
@@ -124,7 +123,7 @@
 
         .footer-bottom {
             
-            flex-direction: column-reverse; //ikoner överest eller underst?
+            flex-direction: column-reverse; 
             gap: 1.5rem;
 
             

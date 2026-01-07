@@ -77,24 +77,7 @@ export default function Projects() {
                         </div>
                     </Link>
                 ))}
-                {/*{projects.map((project: any) => (
-                    <Link to={`/projects/${project.slug}`} key={project._id} className="project-card">
-
-                        <div className="image-container">
-                            {project.imageUrl ? (
-                                <img src={project.imageUrl} alt={project.title} />
-                            ) : (
-                                <div className="placeholder">Ingen bild</div>
-                            )}
-                        </div>
-                        <div className="card-content">
-                            <span className="project-type">{project.type}</span>
-                            <h3>{project.title}</h3>
-                            <p>{project.description}</p>
-                            <span className="read-more">Läs mer &rarr;</span>
-                        </div>
-                    </Link>
-                ))}*/}
+                
             </div>
 
             {filtreredProjects.length === 0 && (

@@ -25,7 +25,7 @@ export default function Footer() {
                         <li><Link to="/about">Om oss</Link></li>
                         <li><Link to="/projects">Projekt</Link></li>
                         <li><Link to="/articles">Nyheter</Link></li>
-                        <li><Link to="/contact">Våra kontor</Link></li>
+                        <li><Link to="/offices">Våra kontor</Link></li>
                     </ul>
                 </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
                     <ul>
                         <li><Link to="/contact">Kontakta oss</Link></li>
                         <li><Link to="/jobs">Lediga tjänster</Link></li>
-                        <li><Link to="/contact">Våra kontor</Link></li>
+                        <li><Link to="/offices">Våra kontor</Link></li>
                     </ul>
                 </div>
             </div>

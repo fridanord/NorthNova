@@ -42,12 +42,23 @@
             max-width: 600px;
             border-radius: 20px;
 
+            @media (max-width: 768px) {
+                padding: 2rem;
+                width: 100%;
+                margin: 0;
+                border-radius: 12px;
+            }
+
             h1 {
                 font-family: var(--font-heading);
                 color: var(--text-light2);
                 font-size: 3rem;
                 line-height: 1.1;
                 margin-bottom: 1.5rem;
+
+                @media (max-width: 768px) {
+                    font-size: 2rem;
+                }
             }
 
             p {
@@ -96,10 +107,8 @@
     }
 
     .values-section {
-        //background-color: var(--text-light2);
         background-color: var(--primary-color);
         font-size: 2.5rem;
-        //margin-bottom: 3rem;
         padding-bottom: 3rem;
 
         h2 {
@@ -107,9 +116,6 @@
             color: var(--text-light2);
             font-weight: 600;
             font-size: 2.8rem;
-            //margin-bottom: 3rem;
-            //margin-left: 3rem;
-            //margin: 3rem;
             padding: 2rem;
         }
 
