@@ -52,12 +52,7 @@ export default function Contact() {
                     <div style={{textAlign: 'center', padding: '2rem', background: '#e8f5e9', borderRadius: "12 px"}}>
                         <h3 style={{color: "#2e7d32"}}>Tack för ditt meddelande!</h3>
                         <p>Vi återkommer till dig så snart vi kan.</p>
-                        <button
-                            onClick={() => setStatus('idle')}
-                            style={{marginTop: "1rem", padding: "0.5rem 1rem", border: "none", background: "#2e7d32", color: "white", borderRadius: "4px", cursor: "pointer"}}
-                            >
-                                Kom du på något mer? Skicka ett till
-                            </button>
+
                         </div>
                 ) : (
                     <form className="contact-form" onSubmit={handleSubmit}>

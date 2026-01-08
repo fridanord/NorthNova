@@ -20,7 +20,7 @@
         }
 
         p {
-            color: #666;
+            color: var(--text-dark);
             font-size: 1.1rem;
             font-family: var(--font-header);
         }
@@ -83,7 +83,7 @@
                     font-size: 0.8rem;
                     text-transform: uppercase;
                     letter-spacing: 1px;
-                    color: #888;
+                    color: var(--text-dark);
                     margin-bottom: 0.5rem;
                 }
 

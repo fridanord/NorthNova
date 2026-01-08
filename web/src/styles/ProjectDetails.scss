@@ -20,7 +20,7 @@
             align-items: center;
             gap: 0.5rem;
             margin-bottom: 2rem;
-            color: #666;
+            color: var(--text-dark);
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
@@ -32,6 +32,7 @@
             &:hover {
                 color: var(--primary-color);
                 transform: translateX(-5px);
+                font-weight: 800;
             }
         }
 
@@ -95,7 +96,7 @@
         .meta-info {
             display: flex;
             align-items: center;
-            color: #888;
+            color: var(--text-dark);
             
         }
     }

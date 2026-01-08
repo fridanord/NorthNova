@@ -72,7 +72,7 @@ $text-light: #ffffff;
 
             .meta {
                 font-size: 0.85rem;
-                color: #666;
+                color: var(--text-dark);
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
             }
