@@ -4,18 +4,19 @@ import { client } from "../sanity"
 import { getAllProjects } from "../queries"
 import "../styles/Projects.scss"
 import "../styles/FilterButtons.scss"
+import { urlFor } from "../sanity"
 
 
 export default function Projects() {
 
-    //Skapa lådor = state för att spara projekten
+    
     const [projects, setProjects] = useState([])
-    const [filter, setFilter] = useState('all') //Filtret 
+    const [filter, setFilter] = useState('all')
 
     useEffect(() => {
         client.fetch(getAllProjects)
         .then((data) => {
-            console.log("Hämtade projekt:", data) //Felsök
+            console.log("Hämtade projekt:", data)
             setProjects(data)
         })
         .catch(console.error)
@@ -67,7 +68,7 @@ export default function Projects() {
                     <Link to={`/projects/${project.slug}`} key={project._id} className="project-card">
                         {project.imageUrl && (
                             <div className="image-container">
-                                <img src={project.imageUrl} alt={project.title} />
+                                <img src={urlFor(project.imageUrl).width(600).height(400).url()} alt={project.title} loading="lazy" />
                                 {project.status === 'upcoming' && <span className="status-badge">Kommande</span>}
                             </div>
                         )}

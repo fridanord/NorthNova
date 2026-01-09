@@ -10,7 +10,7 @@ export default function ProjectDetails() {
     const [project, setProject] = useState<any>(null)
 
     useEffect(() => {
-        client.fetch(getSingleProject, {slug }) // Skickar sluggen till Sanity
+        client.fetch(getSingleProject, {slug })
         .then((data) => setProject(data))
         .catch(console.error)
 

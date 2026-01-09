@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { client } from '../sanity'
 import { getAllArticles } from '../queries'
 import '../styles/Projects.scss'
+import { urlFor } from "../sanity"
 
 export default function Articles() {
     const [articles, setArticles] = useState([])
@@ -26,7 +27,8 @@ export default function Articles() {
 
                     <div className="image-container">
                         {article.imageUrl ? (
-                            <img src={article.imageUrl} alt={article.title} />
+                            
+                            <img src={urlFor(article.imageUrl).width(600).height(400).url()} alt={article.title} loading="lazy" />
                         ) : (
                             <div className="placeholder">Ingen bild</div>
                         )}

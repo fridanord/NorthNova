@@ -3,17 +3,17 @@ import "../styles/Contact.scss"
 
 export default function Contact() {
 
-    //States först
+    
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        subject: "other",//Standard
+        subject: "other",
         message: "",
-        cvFile: null as File | null //Filen
+        cvFile: null as File | null
     })
-    //State för status (skickar, klar, fel)
+    
     const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
-    //Textförändringar
+    
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setFormData({
             ...formData,
@@ -37,7 +37,6 @@ export default function Contact() {
         setTimeout(() => {
             console.log('Formulär skickat:', formData)
             setStatus('success')
-            // Återställ formulär?
             setFormData({ name: '', email: '', subject: 'other', message: '', cvFile: null })
         }, 1500)
     }

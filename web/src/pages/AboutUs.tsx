@@ -5,11 +5,6 @@ export default function AboutUs() {
     return (
         <div className="about-page">
 
-            {/*<section className="about-hero">
-                
-                <h1>Energi för generationer</h1>
-                <p>Vi grundades med en enkel vision: Att göra Norden oberoende av fossila bränslen genom att utnyttja kraften i vår natur - vinden, solen och vattnet. </p>
-            </section>*/}
 
             <section className="about-hero-video">
                 <video className="video-bg" autoPlay loop muted playsInline>

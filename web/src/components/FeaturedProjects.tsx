@@ -26,7 +26,7 @@ export default function FeaturedProjects() {
             <div className="grid-row">
                 {projects.map((project: any) => (
                     <Link to={`/projects/${project.slug}`} key={project._id} className="mini-card">
-                        {/*{project.imageUrl && <img src={project.imageUrl} alt={project.title} loading="lazy"/>}*/}
+                        
                         {project.imageUrl && (
                             <img src={urlFor(project.imageUrl).width(600).height(400).url()} alt={project.title} loading="lazy" />)}
                         <div className="content">
