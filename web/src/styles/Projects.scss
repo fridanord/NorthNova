@@ -13,16 +13,16 @@
 
         h1 {
             font-family: var(--font-heading);
-            font-size: 3rem;
+            font-size: 4rem;
             margin-bottom: 1rem;
-            color: var(--text-dark);
+            color: var(--primary-color);
             text-shadow: none;
         }
 
         p {
-            color: var(--text-dark);
-            font-size: 1.1rem;
-            font-family: var(--font-header);
+            color: var(--text-dark-accent);
+            font-size: 1.2rem;
+            font-family: var(--font-main);
         }
     }
 
@@ -32,16 +32,17 @@
         gap: 2rem;
 
         .project-card {
-            background: white;
+            background: var(--accent-bg);
             border-radius: 12px;
             overflow: hidden;
             text-decoration: none;
-            font-family: var(--font-header);
+            font-family: var(--font-main);
             color: inherit;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
             transition: transform 0.2s, box-shadow 0.2s;
             display: flex;
             flex-direction: column;
+
 
             &:hover {
                 transform: translateY(-5px);
@@ -49,7 +50,7 @@
 
                 .read-more {
                     color: var(--accent-color);
-                    padding-left: 5px;
+                    padding-right: 5px;
                 }
             }
 
@@ -81,14 +82,15 @@
 
                 .project-type {
                     font-size: 0.8rem;
+                    font-weight: 500;
                     text-transform: uppercase;
                     letter-spacing: 1px;
-                    color: var(--text-dark);
+                    color: var(--text-dark-accent);
                     margin-bottom: 0.5rem;
                 }
 
                 h3 {
-                    font-family: var(--font-header);
+                    font-family: var(--font-main);
                     font-size: 1.5rem;
                     margin-bottom: 0.8rem;
                     color: var(--primary-color);
@@ -108,10 +110,14 @@
                 }
 
                 .read-more {
+                    text-align: end;
                     margin-top: auto;
-                    font-weight: 600;
-                    font-size: 0.9rem;
+                    font-weight: 700;
+                    font-size: 1rem;
                     transition: all 0.2s;
+                    color: var(--primary-color);
+                    
+                    
                 }
             }
         }

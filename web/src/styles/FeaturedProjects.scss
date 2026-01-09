@@ -1,8 +1,3 @@
-$primary: #1a1a1a;
-$accent: #d35400;
-$northnova-green: #162d25;
-$accent-yellow: #FFC107;
-$text-light: #ffffff;
 
 .featured-projects {
     background-color: var(--primary-color);
@@ -19,17 +14,17 @@ $text-light: #ffffff;
 
         h2 {
             font-size: 3rem;
-            color: var(--text-light2);
+            color: var(--text-light);
             margin: 0;
-            font-family: var(--font-header);
+            font-family: var(--font-main);
         }
 
         .see-all-link {
-            color: $accent-yellow;
+            color: var(--accent-color);
             text-decoration: none;
             font-weight: 600;
-            font-family: var(--font-header);
-            &:hover { text-decoration: underline; color: lighten($accent-yellow, 10%); }
+            font-family: var(--font-main);
+            &:hover { text-decoration: underline; }
         }
     }
 
@@ -40,7 +35,7 @@ $text-light: #ffffff;
     }
 
     .mini-card {
-        background: #fff;
+        background: var(--accent-bg);
         border: none;
         border-radius: 8px;
         overflow: hidden;
@@ -48,7 +43,7 @@ $text-light: #ffffff;
         color: inherit;
         transition: transform 0.3s;
         display: block;
-        font-family: var(--font-header);
+        font-family: var(--font-main);
 
         &:hover {
             transform: translateY(-5px);
@@ -67,12 +62,12 @@ $text-light: #ffffff;
             h3 {
                 margin: 0 0 0.5rem 0;
                 font-size: 1.2rem;
-                color: $primary;
+                color: var(--primary-color);
             }
 
             .meta {
                 font-size: 0.85rem;
-                color: var(--text-dark);
+                color: var(--text-dark-accent);
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
             }

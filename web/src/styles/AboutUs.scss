@@ -51,7 +51,7 @@
 
             h1 {
                 font-family: var(--font-heading);
-                color: var(--text-light2);
+                color: var(--text-light);
                 font-size: 3rem;
                 line-height: 1.1;
                 margin-bottom: 1.5rem;
@@ -62,8 +62,8 @@
             }
 
             p {
-                font-family: var(--font-header);
-                color: var(--text-light2);
+                font-family: var(--font-main);
+                color: var(--text-light);
                 font-size: 1.1rem;
                 line-height: 1.6;
             }
@@ -91,17 +91,17 @@
 
         .text-content {
             h2 {
-                font-family: var(--font-header);
+                font-family: var(--font-main);
                 font-size: 2.5rem;
                 margin-bottom: 1.5rem;
                 color: var(--primary-color);
             }
 
             p {
-                font-family: var(--font-header);
+                font-family: var(--font-main);
                 margin-bottom: 1rem;
                 line-height: 1.8;
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -112,8 +112,8 @@
         padding-bottom: 3rem;
 
         h2 {
-            font-family: var(--font-header);
-            color: var(--text-light2);
+            font-family: var(--font-main);
+            color: var(--text-light);
             font-weight: 600;
             font-size: 2.8rem;
             padding: 2rem;
@@ -128,21 +128,21 @@
             
 
             .value-card {
-                background: #fff;
+                background-color: var(--accent-bg);
                 padding: 2.5rem;
                 border-radius: 8px;
 
                 h3 {
-                    font-family: var(--font-header);
+                    font-family: var(--font-main);
                     font-size: 2.0rem;
                     margin-bottom: 1rem;
                     color: var(--primary-color);
                 }
 
                 p {
-                    font-family: var(--font-header);
+                    font-family: var(--font-main);
                     font-size: 1.2rem;
-                    color: #232323;
+                    color: var(--text-dark);
                     line-height: 1.6;
                 }
             }

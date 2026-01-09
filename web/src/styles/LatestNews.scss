@@ -1,4 +1,3 @@
-$primary: #1a1a1a;
 $accent: #d35400;
 
 .latest-news {
@@ -22,14 +21,14 @@ $accent: #d35400;
             font-size: 3rem;
             color: var(--primary-color);
             margin: 0;
-            font-family: var(--font-header);
+            font-family: var(--font-main);
         }
 
         .see-all-link {
             color: $accent;
             text-decoration: none;
             font-weight: 700;
-            font-family: var(--font-header);
+            font-family: var(--font-main);
             &:hover { text-decoration: underline; }
         }
     }
@@ -40,12 +39,12 @@ $accent: #d35400;
         gap: 2rem;
 
         .mini-card {
-            background: #fff;
-            border: 1px solid #eee;
+            background: var(--bg-color);
+            border: 2px solid #d6d6d6;
             border-radius: 5px;
             overflow: hidden;
             text-decoration: none;
-            font-family: var(--font-header);
+            font-family: var(--font-main);
             color: inherit;
             transition: transform 0.3s;
             display: block;
@@ -67,12 +66,12 @@ $accent: #d35400;
                 h3 {
                     margin: 0 0 0.5rem 0;
                     font-size: 1.2rem;
-                    color: $primary;
+                    color: var(--primary-color);
                 }
 
                 .meta {
                     font-size: 0.85rem;
-                    color: var(--text-dark);
+                    color: var(--text-dark-accent);
                 }
             }
         }

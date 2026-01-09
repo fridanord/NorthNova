@@ -14,7 +14,7 @@
 
         h1 {
             font-family: var(--font-heading);
-            font-size: 3rem;
+            font-size: 4rem;
             color: var(--primary-color);
             margin-bottom: 1rem;
             text-shadow: none;
@@ -44,12 +44,13 @@
 
     .horizontal-job-card {
         display: flex;
-        background: #ededed;
+        background: var(--bg-accent);
+        border: 2px solid #d6d6d6;
         border-radius: 5px;
         overflow: hidden;
         text-decoration: none;
         color: inherit;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.078);
         transition: all 0.3s ease;
         align-items: stretch;
 
@@ -106,14 +107,14 @@
             }
 
             h3 {
-                font-family: var(--font-header);
+                font-family: var(--font-main);
                 font-size: 1.8rem;
                 margin: 0 0 1rem 0;
-                color: #1a1a1a;
+                color: var(--primary-color);
             }
 
             .short-description {
-                color: #555;
+                color: var(--text-dark-accent);
                 line-height: 1.6;
                 margin: 0;
             }

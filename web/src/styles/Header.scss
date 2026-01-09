@@ -18,7 +18,7 @@
         font-family: "DM sans", sans-serif;
         font-weight: 700;
         font-size: 1.8rem;
-        color: var(--text-light2);
+        color: var(--text-light);
         text-decoration: none;
 
 
@@ -30,9 +30,9 @@
         align-content: center;
 
         a {
-            color: var(--text-light3);
+            color: var(--text-light-accent);
             text-decoration: none;
-            font-family: var(--font-header);
+            font-family: var(--font-main);
             font-weight: 600;
             font-size: 1rem;
             transition: color 0.2s;

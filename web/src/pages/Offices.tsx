@@ -31,7 +31,7 @@ export default function Offices() {
 
             <div className="hero-wrapper">
 
-                <img src="/waterfall.jpg" alt="Norrland" className="hero-image" />
+                <img src="/waterfall.jpg" alt="Skog med vattenfall" className="hero-image" />
                 <div className="overlay"></div>
 
                 <div className="floating-card">

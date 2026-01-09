@@ -75,6 +75,7 @@ export default function Projects() {
                         <div className="card-content">
                             <h3>{project.title}</h3>
                             <span className="project-type">{project.type}</span>
+                            <div className="read-more">Läs mer</div>
                         </div>
                     </Link>
                 ))}

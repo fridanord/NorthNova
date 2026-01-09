@@ -1,4 +1,4 @@
-//Project
+
 export const getAllProjects = `*[_type == "project"]{
   _id,
   title,
@@ -19,7 +19,7 @@ export const getSingleProject = `*[slug.current == $slug][0]{
    "date": _createdAt
 }`;
 
-//Articles
+
 
 export const getAllArticles = `*[_type == "article"] | order(publishedAt desc) {
   _id,
@@ -60,7 +60,7 @@ export const getSingleJob = `*[slug.current == $slug][0]{
    "imageUrl": image.asset->url
 }`;
 
-//Latest for homepage. 
+
 
 export const getLatestProjects = `*[_type == "project"] | order(_createdAt desc) [0..2] {
    _id,

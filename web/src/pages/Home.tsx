@@ -21,7 +21,7 @@ useEffect(() => {
     return (
       <div className="home-container">
         <div className="hero">
-            <video className="video-bg" autoPlay loop muted playsInline>
+            <video className="video-bg" autoPlay loop muted playsInline aria-label="Video som visar vindturbin i solnedgång">
                 <source src={videoBg} type="video/mp4"  />
             </video>
             <div className="hero-overlay"></div>

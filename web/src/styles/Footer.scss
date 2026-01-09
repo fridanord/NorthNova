@@ -23,7 +23,7 @@
 
             p {
                 font-size: 0.95rem;
-                font-family: var(--font-header);
+                font-family: var(--font-main);
                 line-height: 1.6;
                 opacity: 0.8;
                 margin-bottom: 1rem;
@@ -36,7 +36,7 @@
                 font-size: 1.1rem;
                 margin-bottom: 1.5rem;
                 color: var(--accent-color);
-                font-family: var(--font-header);
+                font-family: var(--font-main);
             }
 
             ul {
@@ -48,7 +48,7 @@
 
                     a {
                         color: var(--text-light);
-                        font-family: var(--font-header);
+                        font-family: var(--font-main);
                         text-decoration: none;
                         font-size: 0.95rem;
                         opacity: 0.8;

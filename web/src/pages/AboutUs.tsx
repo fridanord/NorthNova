@@ -7,7 +7,7 @@ export default function AboutUs() {
 
 
             <section className="about-hero-video">
-                <video className="video-bg" autoPlay loop muted playsInline>
+                <video className="video-bg" autoPlay loop muted playsInline aria-label="Video föreställer berg bland moln från hög höjd">
                     <source src={aboutVideo} type="video/mp4" />
                 </video>
                 <div className="overlay-tint"></div>
@@ -74,7 +74,7 @@ export default function AboutUs() {
                 </div>
                 <div className="image-wrapper">
                     <img
-                      src="/river.jpg" alt="Bild av chef & vd gjord med gemini"
+                      src="/river.jpg" alt="Bild på flod som går igenom en skog"
                     />
 
                 </div>

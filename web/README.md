@@ -1,73 +1,33 @@
-# React + TypeScript + Vite
+NorthNova (Degree project.)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application built with React, TypeScript, SCSS and Sanity CMS. This project focuses on accessibility, maintainability and high performance. 
 
-Currently, two official plugins are available:
+Tech Stack:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend: React (Vite) TypeScript. 
+Styling: SCSS with a modular folder structure. 
+Backend/CMS: Sanity.io (Headless CMS)
+Query Language: GROQ 
 
-## React Compiler
+Technical Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+SCSS (Modular Architecture): 
 
-## Expanding the ESLint configuration
+I used SCSS to create a scalable and organized styling system with Variables for colors, typography. Nesting to reflect the HTML structure, making the stylesheets easier to read and maintain and Manual Scoping by using specific parent classes for each component. I ensured that styles remain organized and focused, preventing unintended global overrides. 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Efficient Data Fetching:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Data is fetched from Sanity using GROQ, I use projections to fetch only the specific data needed for each view, reducing payload size. Images are processed through Sanity's image builder to provide cropped and resized URLs, improving loading speeds. 
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Accessibility:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Accessibility was a priority throughout development, the HTML structure is 100% compliant with W3C Standards. All elements meet WCAG AA/AAA contrast requirements, verfied via WebAIM. This project also maintains high scores in Google Lighthouse for Accessibility. 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the respoitory: git clone https://github.com/fridanord/NorthNova
+2. Install dependencies: npm install
+3. Run the development server: 
+cd web
+npm run dev

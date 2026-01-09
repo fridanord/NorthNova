@@ -18,7 +18,7 @@ $bg-color: #f9f9f9;
 
         h1 {
             font-family: var(--font-heading);
-            font-size: 3rem;
+            font-size: 4rem;
             text-shadow: none;
             margin-bottom: 1rem;
             color: var(--primary-color);
@@ -31,7 +31,7 @@ $bg-color: #f9f9f9;
             color: var(--text-dark);
             margin-bottom: 3rem;
             font-size: 1.1rem;
-            font-family: var(--font-header);
+            font-family: var(--font-main);
 
         }
 
@@ -54,7 +54,7 @@ $bg-color: #f9f9f9;
                 border: 1px solid #ddd;
                 border-radius: 8px;
                 font-size: 1rem;
-                font-family: var(--font-header);
+                font-family: var(--font-main);
 
                 font-family: inherit;
                 transition: border-color 0.3s;
@@ -85,7 +85,7 @@ $bg-color: #f9f9f9;
                     font-size: 0.9rem;
                     color: var(--text-dark);
                     font-weight: 600;
-                    font-family: var(--font-header);
+                    font-family: var(--font-main);
 
                 }
 
@@ -101,8 +101,7 @@ $bg-color: #f9f9f9;
 
             button[type="submit"] {
                 background-color: var(--accent-color);
-                font-family: var(--font-header);
-
+                font-family: var(--font-main);
                 color: var(--primary-color);
                 border: none;
                 padding: 1rem;
@@ -116,7 +115,7 @@ $bg-color: #f9f9f9;
                 &:hover {
                     transform: translateY(-2px);
                     background-color: var(--primary-color);
-                    color: var(--text-light2);
+                    color: var(--text-light);
                 }
 
                 &:disabled {
