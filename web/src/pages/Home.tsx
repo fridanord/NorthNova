@@ -6,6 +6,7 @@ import { client } from '../sanity'
 import FeaturedProjects from '../components/FeaturedProjects'
 import LatestNews from "../components/LatestNews"
 import AboutUs from "./AboutUs"
+import videoPoster from "../assets/windturbine.png"
 
 
 
@@ -21,7 +22,7 @@ useEffect(() => {
     return (
       <div className="home-container">
         <div className="hero">
-            <video className="video-bg" autoPlay loop muted playsInline aria-label="Video som visar vindturbin i solnedgång">
+            <video className="video-bg" autoPlay loop muted playsInline poster={videoPoster} aria-label="Video som visar vindturbin i solnedgång">
                 <source src={videoBg} type="video/mp4"  />
             </video>
             <div className="hero-overlay"></div>
