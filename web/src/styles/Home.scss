@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-
     justify-content: flex-start;
     padding-left: 10%;
 
@@ -52,20 +51,22 @@
             font-weight: 700;
             line-height: 1.2;
             max-width: 600px;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             color: var(--text-light);
 
-            @media (max-wifth: 768px) {
+            @media (max-width: 768px) {
                 font-size: 2.8rem;
                 max-width: 100%;
                 margin-left: auto;
-                margin-left: auto;
+                margin-right: auto;
             }
 
             @media (max-width: 400px) {
                 font-size: 2.5rem;
             }
         }
+
+
 
         .cta-button {
             font-family: var(--font-main);
@@ -83,9 +84,7 @@
             &:hover {
                 transform: scale(1.05);
                 filter: brightness(110%);
-
             }
-
         }
     }
 }

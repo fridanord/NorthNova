@@ -27,7 +27,7 @@ useEffect(() => {
             </video>
             <div className="hero-overlay"></div>
             <div className="hero-content">
-                <h1>Vår vision är ett <br /> fossilfritt Norden <br /> - drivet av vinden. </h1>
+                <h1>Vår vision är ett fossilfritt Norden - drivet av vinden.</h1>
                 
                 <Link to="/about" className="cta-button">
                    Läs mer här ➝
