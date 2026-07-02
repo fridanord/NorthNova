@@ -1,5 +1,7 @@
 # NorthNova - Green Energy Corporate Solution
 
+🔗 [Live Demo](https://northnova.netlify.app/)
+
 A modern corporate web application developed as a graduation project for a fictional green energy provider.
 
 The project combines a polished user experience with a decoupled architecture where a React frontend communicates with a Sanity headless CMS, allowing editors to manage content without modifying the codebase.
